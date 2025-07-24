@@ -50,6 +50,12 @@ export default function Journal() {
       amount: "",
     });
   };
+  
+  const handleRemoveRecord = (id) => {
+      const filtered = records.filter((rec) => rec.id !== id);
+      setRecords(filtered);
+      localStorage.setItem("spendingRecords", JSON.stringify(filtered));
+    };
 
   const handleAddCategory = () => {
     const trimmed = newCategory.trim();
@@ -75,6 +81,9 @@ export default function Journal() {
     setCategories(updated);
     localStorage.setItem("spendingCategories", JSON.stringify(updated));
     setNewCategory("");
+
+  
+
   };
 
   return (
@@ -115,7 +124,7 @@ export default function Journal() {
               >
                 <option value="">Select Category</option>
                 {categories.map((cat) => (
-                  <option key={cat.id} value={cat.id}>
+                  <option key={cat.id} value={cat.name}>
                     {cat.name}
                   </option>
                 ))}
@@ -176,8 +185,10 @@ export default function Journal() {
                     <th className="py-3 px-6 text-left font-semibold">Date</th>
                     <th className="py-3 px-6 text-left font-semibold">Category</th>
                     <th className="py-3 px-6 text-right font-semibold">Amount</th>
+                    <th className="py-3 px-6 text-center font-semibold">Action</th>
                   </tr>
                 </thead>
+
                 <tbody className="bg-white">
                   {[...records].reverse().map((rec) => (
                     <tr
@@ -191,9 +202,19 @@ export default function Journal() {
                       <td className="py-3 px-6 text-right font-mono">
                         ${rec.amount.toFixed(2)}
                       </td>
+                      <td className="py-3 px-6 text-center">
+                        <button
+                          onClick={() => handleRemoveRecord(rec.id)}
+                          className="text-red-600 hover:text-red-800 font-semibold"
+                          aria-label={`Remove record on ${rec.date}`}
+                        >
+                          Remove
+                        </button>
+                      </td>
                     </tr>
                   ))}
                 </tbody>
+
               </table>
             </div>
           )}
