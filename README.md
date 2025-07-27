@@ -18,13 +18,13 @@ You can try the app live here:
 
 ### 📊 Dashboard View
 
-(./src/assets/screenshots/dashboard1.png)
-(./src/assets/screenshots/dashboard2.png)
+(src/assets/screenshots/dashboard1.png)
+(src/assets/screenshots/dashboard2.png)
 
 ### 📒 Journal View
 
-(./src/assets/screenshots/journal1.png)
-(./src/assets/screenshots/journal2.png)
+(src/assets/screenshots/journal1.png)
+(src/assets/screenshots/journal2.png)
 
 
 ## 👥 Team Members
