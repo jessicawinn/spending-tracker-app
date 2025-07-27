@@ -16,15 +16,12 @@ You can try the app live here:
 
 ## Screenshots
 
-### 📊 Dashboard View
+📊 Dashboard View  
+![Dashboard 1](src/assets/screenshots/dashboard1.png) ![Dashboard 2](src/assets/screenshots/dashboard2.png)
 
-(src/assets/screenshots/dashboard1.png)
-(src/assets/screenshots/dashboard2.png)
+📒 Journal View  
+![Journal 1](src/assets/screenshots/journal1.png) ![Journal 2](src/assets/screenshots/journal2.png)
 
-### 📒 Journal View
-
-(src/assets/screenshots/journal1.png)
-(src/assets/screenshots/journal2.png)
 
 
 ## 👥 Team Members
