@@ -1,12 +1,30 @@
-# React + Vite
+# Spending Tracker App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Description
 
-Currently, two official plugins are available:
+The **Spending Tracker App** is a simple, user-friendly web application designed to help users track their daily expenses and manage their budget. It allows users to input their spending, view detailed reports, and categorize their expenditures to gain insights into their financial habits.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Track Expenses**: Add and categorize your daily spending.
+- **View Summary**: See an overview of your monthly spending with graphical charts.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Demo
+
+You can try the app live here:  
+[Spending Tracker App Demo](https://jessicawinn.github.io/spending-tracker-app/)
+
+## Screenshots
+
+📊 Dashboard View  
+![Dashboard 1](src/assets/screenshots/dashboard1.png) ![Dashboard 2](src/assets/screenshots/dashboard2.png)
+
+📒 Journal View  
+![Journal 1](src/assets/screenshots/journal1.png) ![Journal 2](src/assets/screenshots/journal2.png)
+
+
+
+## 👥 Team Members
+
+- Jessica Win 6511269
+- Yunn Yamone Aung 6511158
